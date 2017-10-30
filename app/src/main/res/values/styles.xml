@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_b2</item>
+        <item name="colorAccent">@color/color_o1</item>
+        <item name="android:listDivider">@drawable/decoration_line</item>
+    </style>
+
+    <style name="welcome" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/color_b2</item>
+        <item name="android:windowBackground">@mipmap/bg_welcome</item>
+    </style>
+
+    //透明的dialog主题
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+		<item name="android:padding">0dp</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_check</item>
+    </style>
+    //银行textview的主题
+    <style name="bankText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/color_b1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    //dialog动画效果主题
+    <style name="MoveDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="tabTextSize">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+
+</resources>

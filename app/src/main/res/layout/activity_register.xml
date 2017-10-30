@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@mipmap/icon_back"/>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="290dp"
+        android:layout_height="416dp"
+        app:cardBackgroundColor="@color/color_b2"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="87dp"
+                android:layout_height="31dp"
+                android:background="@drawable/register_title"
+                android:gravity="center"
+                android:text="注册信息"
+                android:textColor="@color/color_b2"/>
+
+            <include layout="@layout/register_step_first"/>
+            <include layout="@layout/register_step_second"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_step"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="281dp"
+        android:layout_height="32dp"
+        android:background="@drawable/btn_submit"
+        android:textColor="@color/text_lw1"
+        android:text="下一步"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_login"
+            android:textSize="10dp"
+            android:text="“"
+            android:drawableRight="@mipmap/start"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_login"
+            android:textSize="10dp"
+            android:text="”键所属栏为必填栏"
+            />
+    </LinearLayout>
+</LinearLayout>

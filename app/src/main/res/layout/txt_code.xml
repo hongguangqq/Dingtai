@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="买入"
+    android:textSize="14dp"
+    android:padding="3dp"
+    android:layout_margin="5dp"
+    android:background="@color/color_b2"
+    android:textColor="@color/color_g2">
+
+</TextView>

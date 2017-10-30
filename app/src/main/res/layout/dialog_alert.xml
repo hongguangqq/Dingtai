@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="175dp"
+    android:layout_height="120dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="-10dp"
+    android:background="@drawable/bg_corner">
+    <TextView
+        android:id="@+id/tv_alert_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否退出登录"
+        android:textColor="@color/color_g2"
+        android:textSize="14dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_alert_submit"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:text="确定"
+            android:textSize="10dp"
+            android:textColor="@color/color_g2"
+            android:background="@drawable/bg_input_off"/>
+        <Button
+            android:id="@+id/btn_alert_cancel"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="14dp"
+            android:text="取消"
+            android:textSize="10dp"
+            android:textColor="@color/color_b2"
+            android:background="@drawable/btn_submit_off"/>
+    </LinearLayout>
+</LinearLayout>

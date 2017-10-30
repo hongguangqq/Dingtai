@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_b3"
+    tools:context="com.jyt.baseapp.view.activity.AboutActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_b2">
+        <ImageView
+            android:id="@+id/iv_about_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_back"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textSize="16dp"
+            android:textColor="@color/color_o1"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="\t\t\t\t鼎泰金融股票软件是一个提供行情显示、行情分析和行情交易的股票软件。它分为免费PC产品，付费PC产品，电脑平板产品，手机产品等适用性强的多个版本。同花顺股票软件注重各大证券机构、广大股民的需求和使用习惯，同花顺股票软件全新版免注册。全新版同花顺股票软件新增强大功能：自主研发的搜牛财经及自定义选股，新增通达信模式。"
+        android:textSize="14dp"
+        android:textColor="@color/color_g2"
+        android:paddingTop="20dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"/>
+</LinearLayout>

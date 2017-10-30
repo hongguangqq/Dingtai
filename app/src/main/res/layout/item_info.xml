@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_marginBottom="2dp"
+    android:background="@color/color_b2"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/tv_iteminfo_goodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西凤国花瓷52°"
+        android:textSize="16dp"
+        android:textColor="@color/color_g2"/>
+    <TextView
+        android:id="@+id/tv_iteminfo_goodsDesc"
+        android:layout_below="@+id/tv_iteminfo_goodsName"
+        android:layout_marginTop="1dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:text="选用具有2000余年历史的瓷都醴陵的dedededde"
+        android:singleLine="true"
+        android:textSize="11dp"
+        android:textColor="@color/color_b1"/>
+    <TextView
+        android:id="@+id/tv_iteminfo_updateTime"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="2017-09-09"
+        android:textSize="11dp"
+        android:textColor="@color/color_b1"/>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="225dp"
+    android:layout_height="match_parent"
+    app:cardElevation="30dp"
+    app:cardMaxElevation="30dp"
+    app:cardBackgroundColor="@color/color_b2">
+    <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_b2">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_width="162dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="出金"
+            android:textSize="16dp"
+            android:textColor="@color/color_o1"
+            android:background="@drawable/bg_input_off"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="42dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额："
+                android:textSize="12dp"
+                android:textColor="@color/color_g2"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="324"
+                android:textSize="18dp"
+                android:textColor="#800000"
+                android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入金金额"
+                android:textSize="12dp"
+                android:textColor="@color/color_b1"/>
+
+            <EditText
+                android:id="@+id/et_intomoney"
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/color_g2"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/bg_input_off"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录密码"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/color_b1"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textSize="14dp"
+                android:textColor="@color/color_g2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-0dp"
+                android:background="@drawable/bg_input_off"/>
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="162dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="35dp"
+            android:text="出金"
+            android:textColor="@color/color_b2"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_submit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="投资有风险\n\n入市需谨慎"
+            android:layout_gravity="center_horizontal"
+            android:textSize="11dp"
+            android:textColor="@color/color_b1"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
