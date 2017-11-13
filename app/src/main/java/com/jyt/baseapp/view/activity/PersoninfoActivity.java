@@ -205,6 +205,7 @@ public class PersoninfoActivity extends BaseActivity implements View.OnClickList
                         @Override
                         public void ResultData(boolean isSuccess, String url) {
                             if (isSuccess){
+                                Log.e("@#","url="+url);
                                 Glide.with(PersoninfoActivity.this)
                                         .load(url)
                                         .into(mCivPersonHeadpic);

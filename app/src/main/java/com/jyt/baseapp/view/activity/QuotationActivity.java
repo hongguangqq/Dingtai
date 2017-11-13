@@ -184,12 +184,13 @@ public class QuotationActivity extends BaseActivity implements View.OnClickListe
             switch (msg.what) {
                 case Const.STATE_DATA_SUCCESS:
                     mDatas= (KChartBean) msg.obj;
-                    if(mDatas.getK()!=null || mDatas.getK().size()>0){
+                    if(mDatas.getK()!=null && mDatas.getK().size()>0){
                         combinedchart.setVisibility(View.VISIBLE);
                         combinedchart.clear();
                         bottomchart.setVisibility(View.VISIBLE);
                         bottomchart.clear();
                         KChartBean bean=mStockUtil.transformTime(mDatas,stateTime);//转换后的数据
+
                         String[] time=new String[bean.getK().size()];
                         for (int i=0;i<bean.getK().size();i++){
                             if (isDay){
@@ -249,8 +250,11 @@ public class QuotationActivity extends BaseActivity implements View.OnClickListe
                     }
                     break;
                 case Const.STATE_TODAY_SUCCESS:
-
-                    setTodayData((TodayBean) msg.obj);
+                    TodayBean bean=(TodayBean) msg.obj;
+                    if (bean==null){
+                        return;
+                    }
+                    setTodayData(bean);
                     break;
             }
         }
